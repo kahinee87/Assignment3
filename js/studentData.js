@@ -1,37 +1,37 @@
-var NYCSpots = [
+var nycSpots = [
   {
-    "Name": "Kahinee",
-    "NYUProgram": "Wagner",
-    "FavouriteNYCSpots": "Brooklyn Bridge Park",
-    "Lng": -73.9974
-    "Lat": 40.6995
+    "name": "Kahinee",
+    "nyuprogram": "Wagner",
+    "favouritenycspots": "Brooklyn Bridge Park",
+    "lng": -73.9974
+    "lat": 40.6995
   },
   {
-    "Name": "Kahinee",
-    "NYUProgram": "Wagner",
-    "FavouriteNYCSpots": "Grand Central Terminal",
-    "Lng": -73.9772,
-    "Lat": 40.7527
+    "name": "Kahinee",
+    "nyuprogram": "Wagner",
+    "favouritenycspots": "Grand Central Terminal",
+    "lng": -73.9772,
+    "lat": 40.7527
   },
   {
-    "Name": "Kahinee",
-    "NYUProgram": "Wagner",
-    "FavouriteNYCSpots": "Spring Street",
-    "Lng": -74.0040,
-    "Lat": 40.7258
+    "name": "Kahinee",
+    "nyuprogram": "Wagner",
+    "favouritenycspots": "Spring Street",
+    "lng": -74.0040,
+    "lat": 40.7258
   },
   {
-    "Name": "Kahinee",
-    "NYU Program": "Wagner",
-    "FavouriteNYCSpots": "High Line",
+    "name": "Kahinee",
+    "nyuprogram": "Wagner",
+    "favouriteNYCSpots": "High Line",
     "Lng": -74.0048,
     "Lat": 40.7480
   },
   {
-    "Name": "Kahinee",
-    "NYUProgram": "Wagner",
-    "FavouriteNYCSpots": "Bryant Park",
-    "Lng": -73.9832,
-    "Lat": 40.7536
+    "name": "Kahinee",
+    "nyuprogram": "Wagner",
+    "favouritenycspots": "Bryant Park",
+    "lng": -73.9832,
+    "lat": 40.7536
   }
 ]

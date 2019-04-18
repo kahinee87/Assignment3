@@ -19,17 +19,17 @@ var marker = new mapboxgl.Marker()
   .setPopup(popup)
   .addTo(map);
 
-NYCSpots.forEach(function(studentData) {
+nycspots.forEach(function(studentData) {
 
   var thisStudentsColor = 'steelblue';
-  if (studentData.NYUProgram === 'Wagner') thisStudentsColor = 'yellow';
+  if (studentData.nyuprogram === 'Wagner') thisStudentsColor = 'yellow';
 
 
   new mapboxgl.Marker({
     color: thisStudentsColor,
   })
-    .setLngLat([studentData.Lng, studentData.Lat])
+    .setLngLat([studentData.lng, studentData.lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setText(`${studentData.Name} says this is one of my top 5 favourite local spots in NYC ${studentData.FavouriteNYCSpots}`))
+      .setText(`${studentData.name} says this is one of my top 5 favourite local spots in NYC ${studentData.favouritenycspots}`))
     .addTo(map);
 })
