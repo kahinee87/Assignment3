@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nIiwiYSI6IjAyYzIwYTJjYTVhMzUxZTVkMzdmY
 var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
-  center: [-73.98, 40.70],
+  center: [-73.990688,40.742055],
   zoom: 9.5,
 });
 
@@ -12,26 +12,24 @@ var map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Hi Web Mapping 2019 Class!');
+  .setText('Hello');
 
 var marker = new mapboxgl.Marker()
   .setLngLat([-73.969145,40.669116])
   .setPopup(popup)
   .addTo(map);
 
-studentPizzaShops.forEach(function(studentData) {
+NYCSpots.forEach(function(studentData) {
 
   var thisStudentsColor = 'steelblue';
-  if (studentData.nyuprogram === 'wagner') thisStudentsColor = 'orange';
-  if (studentData.nyuprogram === 'cusp') thisStudentsColor = 'purple';
-  if (studentData.nyuprogram === 'adjunct') thisStudentsColor = 'green';
-  if (studentData.nyuprogram === 'global liberal studies') thisStudentsColor = 'yellow';
+  if (studentData.nyuprogram === 'wagner') thisStudentsColor = 'yellow';
+
 
   new mapboxgl.Marker({
     color: thisStudentsColor,
   })
-    .setLngLat([studentData.lng, studentData.lat])
+    .setLngLat([studentData.Long, studentData.Lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setText(`${studentData.name} says their favorite pizza shop is ${studentData.favoritepizzashop}`))
+      .setText(`${studentData.Name} says this is my one of my top 5 favourite local spots in NYC ${studentData.FavouriteNYCSpots}`))
     .addTo(map);
 })
