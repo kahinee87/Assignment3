@@ -11,9 +11,6 @@ var map = new mapboxgl.Map({
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Hello');
-
 var marker = new mapboxgl.Marker()
   .setLngLat([-73.969145,40.669116])
   .setPopup(popup)
@@ -28,8 +25,8 @@ NYCSpots.forEach(function(studentData) {
   new mapboxgl.Marker({
     color: thisStudentsColor,
   })
-    .setLngLat([studentData.Long, studentData.Lat])
+    .setLngLat([studentData.Lng, studentData.Lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setText(`${studentData.Name} says this is my one of my top 5 favourite local spots in NYC ${studentData.FavouriteNYCSpots}`))
+      .setText(`${studentData.Name} says this is one of my top 5 favourite local spots in NYC ${studentData.FavouriteNYCSpots}`))
     .addTo(map);
 })
