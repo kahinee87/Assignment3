@@ -1,9 +1,9 @@
-var nycSpots = [
+var nycspots = [
   {
     "name": "Kahinee",
     "nyuprogram": "Wagner",
     "favouritenycspots": "Brooklyn Bridge Park",
-    "lng": -73.9974
+    "lng": -73.9974,
     "lat": 40.6995
   },
   {
@@ -24,8 +24,8 @@ var nycSpots = [
     "name": "Kahinee",
     "nyuprogram": "Wagner",
     "favouriteNYCSpots": "High Line",
-    "Lng": -74.0048,
-    "Lat": 40.7480
+    "lng": -74.0048,
+    "lat": 40.7480
   },
   {
     "name": "Kahinee",
