@@ -32,6 +32,6 @@ nycspots.forEach(function(studentData) {
   })
     .setLngLat([studentData.lng, studentData.lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setText(`${studentData.name} says this is one of my top 5 favourite local spots in NYC ${studentData.favouritenycspots}`))
+      .setText(`${studentData.name} says ${studentData.favouritenycspots} is one of my favourite local spots in NYC`))
     .addTo(map);
 })
