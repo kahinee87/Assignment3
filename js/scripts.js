@@ -1,10 +1,10 @@
-mapbox.accesstoken= 'pk.eyJ1Ijoia3M0NjYwIiwiYSI6ImNqdW0zb3ozcTB6N2czeXM2aDd2ODVhYXoifQ.BozIttsq7xqvKdxUel6tRQ';
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nIiwiYSI6IjAyYzIwYTJjYTVhMzUxZTVkMzdmYTQ2YzBmMTM0ZDAyIn0.owNd_Qa7Sw2neNJbK6zc1A';
 
 var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
-  center: [-73.990688,40.742055],
+  center: [-73.99,40.74],
   zoom: 9.5,
 });
 
@@ -22,7 +22,7 @@ var marker = new mapboxgl.Marker()
 NYCSpots.forEach(function(studentData) {
 
   var thisStudentsColor = 'steelblue';
-  if (studentData.nyuprogram === 'wagner') thisStudentsColor = 'yellow';
+  if (studentData.NYUProgram === 'Wagner') thisStudentsColor = 'yellow';
 
 
   new mapboxgl.Marker({
