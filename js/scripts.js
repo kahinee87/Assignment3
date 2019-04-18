@@ -22,7 +22,9 @@ var marker = new mapboxgl.Marker()
 nycspots.forEach(function(studentData) {
 
   var thisStudentsColor = 'steelblue';
-  if (studentData.nyuprogram === 'Wagner') thisStudentsColor = 'yellow';
+  if (studentData.type === 'park') thisStudentsColor = 'green';
+  if (studentData.type === 'street') thisStudentsColor = 'grey';
+  if (studentData.type === 'station') thisStudentsColor = 'yellow';
 
 
   new mapboxgl.Marker({
