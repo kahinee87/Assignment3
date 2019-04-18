@@ -23,7 +23,7 @@ var nycspots = [
   {
     "name": "Kahinee",
     "type": "park",
-    "favouritenycspots": "High Line",
+    "favouritenycspots": "High Line Park",
     "lng": -74.0048,
     "lat": 40.7480
   },
