@@ -2,5 +2,6 @@
 #mapContainer {
   height: 100%;
   width: 100%;
-  background: lightgrey;
+  background: black;
   margin: 0 auto;
+}

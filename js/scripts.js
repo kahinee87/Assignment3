@@ -11,19 +11,23 @@ var map = new mapboxgl.Map({
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-nycspots.forEach(function(studentData) {
+var popup = new mapboxgl.Popup({ offset: 40 })
+  .setText('Hi Web Mapping 2019 Class!');
 
-  var thisStudentsColor = 'steelblue';
-  if (studentData.type === 'park') thisStudentsColor = 'green';
-  if (studentData.type === 'street') thisStudentsColor = 'grey';
-  if (studentData.type === 'station') thisStudentsColor = 'yellow';
+var marker = new mapboxgl.Marker()
+  .setLngLat([-73.969145,40.669116])
+  .setPopup(popup)
+  .addTo(map);
 
+dataCitibikeLocation.forEach(function(citibikeData) {
+
+  var thisstationcolor = 'steelblue';
 
   new mapboxgl.Marker({
-    color: thisStudentsColor,
+    color: thisstationcolor,
   })
-    .setLngLat([studentData.lng, studentData.lat])
+    .setLngLat([citibikeData.longitude, citibikeData.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setText(`${studentData.name} says ${studentData.favouritenycspots} is one of my favourite local spots in NYC`))
+      .setText(`the station name is ${citibikeData.stationName} and has ${citibikeData.totalDocks} docks`))
     .addTo(map);
 })
