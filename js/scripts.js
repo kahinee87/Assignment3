@@ -29,5 +29,5 @@ dataCitibikeLocation.forEach(function(citibikeData) {
     .setLngLat([citibikeData.longitude, citibikeData.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
       .setText(`the station name is ${citibikeData.stationName} and has ${citibikeData.totalDocks} docks`))
-    .addTo(map);
+    .addTo(map)
 })
