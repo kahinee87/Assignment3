@@ -1,7 +1,12 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 
 #mapContainer {
   height: 100%;
   width: 100%;
-  background: black;
+  background: lightgray;
   margin: 0 auto;
 }
